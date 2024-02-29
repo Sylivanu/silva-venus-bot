@@ -15,14 +15,14 @@ const { default: axios } = require('axios');
 
 
 
-zokou({ nomCom: "tagall", categorie: 'Group', reaction: "📣" }, async (dest, zk, commandeOptions) => {
+zokou({ nomCom: "tagall", categorie: 'Group', reaction: "🪄" }, async (dest, zk, commandeOptions) => {
 
   const { ms, repondre, arg, verifGroupe, nomGroupe, infosGroupe, nomAuteurMessage, verifAdmin, superUser } = commandeOptions
 
 
  
 
-  if (!verifGroupe) { repondre("✋🏿 ✋🏿this command is reserved for groups ❌"); return; }
+  if (!verifGroupe) { repondre("✋🏿 ✋🏿this command is reserved for groups🪄𝐒𝚰𝐋𝛁𝚫 𝚻𝚵𝐂𝚮💋 ❌"); return; }
   if (!arg || arg === ' ') {
   mess = 'Aucun Message'
   } else {
@@ -31,7 +31,7 @@ zokou({ nomCom: "tagall", categorie: 'Group', reaction: "📣" }, async (dest, z
   let membresGroupe = verifGroupe ? await infosGroupe.participants : ""
   var tag = ""; 
   tag += `========================\n  
-        🌟 *Zokou-Md* 🌟
+        🌟 *𝐒𝚰𝐋𝛁𝚫 𝚻𝚵𝐂𝚮💋* 🌟
 ========================\n
 👥 Group : ${nomGroupe} 🚀 
 👤 Autor : *${nomAuteurMessage}* 👋 
@@ -62,7 +62,7 @@ zokou({ nomCom: "tagall", categorie: 'Group', reaction: "📣" }, async (dest, z
 });
 
 
-zokou({ nomCom: "link", categorie: 'Group', reaction: "🙋" }, async (dest, zk, commandeOptions) => {
+zokou({ nomCom: "link", categorie: 'Group', reaction: "🪄" }, async (dest, zk, commandeOptions) => {
   const { repondre, nomGroupe, nomAuteurMessage, verifGroupe } = commandeOptions;
   if (!verifGroupe) { repondre("wait bro , you want the link to my dm?"); return; };
 
@@ -70,7 +70,7 @@ zokou({ nomCom: "link", categorie: 'Group', reaction: "🙋" }, async (dest, zk,
   var link = await zk.groupInviteCode(dest)
   var lien = `https://chat.whatsapp.com/${link}`;
 
-  let mess = `hello ${nomAuteurMessage} , here is the group link ${nomGroupe} \n
+  let mess = `hello ${nomAuteurMessage} , here is the group link sent by 🪄𝐒𝚰𝐋𝛁𝚫 𝚻𝚵𝐂𝚮💋 ${nomGroupe} \n
 
 Lien :${lien}`
   repondre(mess)
@@ -192,12 +192,12 @@ zokou({ nomCom: "demote", categorie: 'Group', reaction: "👨🏿‍💼" }, asy
               zk.sendMessage(dest, { text: txt, mentions: [auteurMsgRepondu] })
             }
 
-          } else { return repondre("This user is not part of the group."); }
+          } else { return repondre("This user is not part of the group 🪄𝐒𝚰𝐋𝛁𝚫 𝚻𝚵𝐂𝚮💋."); }
         }
-        else { return repondre("Sorry I cannot perform this action because I am not an administrator of the group.") }
+        else { return repondre("Sorry I cannot perform this action because I am not an administrator of the group.🪄𝐒𝚰𝐋𝛁𝚫 𝚻𝚵𝐂𝚮💋") }
 
-      } else { repondre("please tag the member to be removed"); }
-    } else { return repondre("Sorry I cannot perform this action because you are not an administrator of the group.") }
+      } else { repondre("please tag the member to be removed 𝐒𝚰𝐋𝛁𝚫 𝚻𝚵𝐂𝚮💋"); }
+    } else { return repondre("Sorry I cannot perform this action because you are not an administrator of the group 𝐒𝚰𝐋𝛁𝚫 𝚻𝚵𝐂𝚮💋.") }
   } catch (e) { repondre("oups " + e) }
 
 })
@@ -251,7 +251,7 @@ zokou({ nomCom: "remove", categorie: 'Group', reaction: "👨🏿‍💼" }, asy
             if (admin == false) {
               const gifLink = "https://raw.githubusercontent.com/djalega8000/Zokou-MD/main/media/remover.gif"
               var sticker = new Sticker(gifLink, {
-                pack: 'Zokou-Md', // The pack name
+                pack: '🪄𝐒𝚰𝐋𝛁𝚫 𝚻𝚵𝐂𝚮💋', // The pack name
                 author: nomAuteurMessage, // The author name
                 type: StickerTypes.FULL, // The sticker type
                 categories: ['🤩', '🎉'], // The sticker category
@@ -343,7 +343,7 @@ zokou({ nomCom: "info", categorie: 'Group' }, async (dest, zk, commandeOptions) 
 
     let mess = {
       image: { url: ppgroup },
-      caption:  `*━━━━『Info du groupe』━━━━*\n\n*🎐Name:* ${info.subject}\n\n*🔩Group's ID:* ${dest}\n\n*🔍Desc:* \n\n${info.desc}`
+      caption:  `*━━━━𝐒𝚰𝐋𝛁𝚫 𝚻𝚵𝐂𝚮💋━━━━*\n\n*🎐Name:* ${info.subject}\n\n*🔩Group's ID:* ${dest}\n\n*🔍Desc:* \n\n${info.desc}`
     }
 
 
