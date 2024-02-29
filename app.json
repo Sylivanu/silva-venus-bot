@@ -1,16 +1,16 @@
 {
-  "name":"Zokou-2.0",
-  "description":"bot whatsapp développé par djalega++",
+  "name":"𝐒𝚰𝐋𝛁𝚫 𝚻𝚵𝐂𝚮💋",
+  "description":"bot whatsapp created by team +𝐒𝚰𝐋𝛁𝚫 𝚻𝚵𝐂𝚮💋",
   "keywords":["bot","node","baileys","whatsapp"],
-  "logo":"https://raw.githubusercontent.com/djalega8000/Zokou-2.0/main/Zokou.jpg",
-  "repository":"https://github.com/djalega8000/Zokou-2.0",
+  "logo":"https://telegra.ph/file/3647aeca79bcc25555c99.jpg",
+  "repository":"https://github.com/Sylivanu/silva-venus-bot",
   "succes_url":"/",
   "stack":"container",
   "env":{
     "PREFIX":
     {
       "description":"choose your prefix of bot",
-      "value":"#",
+      "value":".",
       "required":true
     },
     "AUTO_READ_STATUS":
@@ -35,14 +35,14 @@
     "BOT_NAME" : {
        
       "description":"put A name for your bot",
-      "value":"Zokou-MD",
+      "value":"𝐒𝚰𝐋𝛁𝚫 𝚻𝚵𝐂𝚮💋",
       "required":false
 
     } ,
      "BOT_MENU_LINKS" : {
     
       "description":"add one or many link for your bot menu  ; eg : url1,url2,url3.....",
-      "value":"https://i.pinimg.com/736x/0a/70/6f/0a706f90d6a1fb39919aedfbb7fdd8d3.jpg",
+      "value":"https://telegra.ph/file/3647aeca79bcc25555c99.jpg",
       "required":false
        
      },
@@ -55,11 +55,11 @@
 	,
     "HEROKU_APY_KEY": {
     "description": "insert your heroku api-key (this is optionnal)",
-     "required" :false
+     "required" :true
     },
   "HEROKU_APP_NAME": {
     "description": "insert your heroku APP NAME (this is optionnal)",
-     "required" :false
+     "required" :true 
     }  
 	  ,
     "SESSION_ID":
@@ -74,14 +74,14 @@
     
     "desc": "Your Name",
     "required": false,
-    "value": "Djalega++"
+    "value": "𝐒𝚰𝐋𝛁𝚫 𝚻𝚵𝐂𝚮💋"
   },
-    "NUMERO_OWNER":
+    "NUMBER_OWNER":
   {
     
-    "desc": "Your number , dont put '+' and put you area code(exemple of togo '228')",
+    "desc": "Your number , dont put '+' and put you area code(exemple of togo '254')",
     "required":false,
-    "value": "22891733300"
+    "value": "254700143167"
   },
     "WARN_COUNT":
   {
